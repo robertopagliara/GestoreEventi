@@ -59,4 +59,12 @@ public class Evento {
     // appendo il resto della parola in minuscolo */ se il nome dell'evento supera i 50 caratteri, eseguo il truncate prendendo solo le prime 50 lettere aggiungedo alla fine "..."
     return nomeEvento.length() > 50 ? nomeEvento.substring(0, 50) + "..." : nomeEvento;
   }
+  
+  public LocalDate getData() {
+    return data;
+  }
+  
+  public TipoEvento getTipo() {
+    return tipo;
+  }
 }
