@@ -26,6 +26,12 @@ public class Evento {
     this.codice = generaCodice(data);
   }
   
+  // override del metodo tostring di java per mappare l'output di getEventi in GestoreEventi, quando stampo un array
+  @Override
+  public String toString() {
+    return codice + " | " + nome + " | " + tipo + " | " + data;
+  }
+  
   private String generaCodice(LocalDate data) {
     String dataFormattata = data.format(DateTimeFormatter.ofPattern("yyyyMMdd"));
     

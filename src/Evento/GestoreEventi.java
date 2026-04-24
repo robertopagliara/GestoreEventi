@@ -41,4 +41,10 @@ public class GestoreEventi {
     
     return eventiFiltrati;
   }
+  
+  public void getEventi() {
+    for (int i = 0; i < contatore; i++) {
+      System.out.println(eventi[i]);
+    }
+  }
 }
